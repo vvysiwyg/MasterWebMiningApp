@@ -82,6 +82,6 @@
     {
         await JS.InvokeVoidAsync("blazorCulture.set", culture);
         CurrentCulture = culture;
-        Navigation.NavigateTo("/", forceLoad: true);
+        Navigation.NavigateTo(Navigation.BaseUri, forceLoad: true);
     }
 }
