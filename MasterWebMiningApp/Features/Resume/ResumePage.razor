@@ -1,11 +1,163 @@
-﻿<table class="table table-hover">
+﻿@page "/"
+@inject IStringLocalizer<LHeaderComponent> LocalizerHC
+@inject IStringLocalizer<LResumePage> LocalizerRP
+
+<div class="mb-4">
+    <HeaderComponent />
+</div>
+
+<table class="table table-hover table-striped">
     <tbody>
         <tr>
             <td>
-                ФИО
+                @LocalizerRP["HFio"]
             </td>
             <td>
-                Козиев Артем 
+                @LocalizerHC["Fio"]
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @LocalizerRP["HDob"]
+            </td>
+            <td>
+                @LocalizerRP["Dob"]
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @LocalizerRP["HPob"]
+            </td>
+            <td>
+                @LocalizerRP["Pob"]
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @LocalizerRP["HSchool"]
+            </td>
+            <td>
+                @LocalizerRP["School"]
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @LocalizerRP["HHei"]
+            </td>
+            <td>
+                @LocalizerRP["Hei"]
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @LocalizerRP["HAverageGrade"]
+            </td>
+            <td>
+                @LocalizerRP["AverageGrade"]
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @LocalizerRP["HLang"]
+            </td>
+            <td>
+                <ul>
+                    <li>@LocalizerRP["Lang1"]</li>
+                    <li>@LocalizerRP["Lang2"]</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @LocalizerRP["HHobbies"]
+            </td>
+            <td>
+                <ul>
+                    <li>@LocalizerRP["Hobbies1"]</li>
+                    <li>@LocalizerRP["Hobbies2"]</li>
+                    <li>@LocalizerRP["Hobbies3"]</li>
+                    <li>@LocalizerRP["Hobbies4"]</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @LocalizerRP["HSoftSkills"]
+            </td>
+            <td>
+                <ul>
+                    <li>@LocalizerRP["SoftSkills1"]</li>
+                    <li>@LocalizerRP["SoftSkills2"]</li>
+                    <li>@LocalizerRP["SoftSkills3"]</li>
+                    <li>@LocalizerRP["SoftSkills4"]</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @LocalizerRP["HHardSkills"]
+            </td>
+            <td>
+                <p><b>@LocalizerRP["HProgLangs"]</b></p>
+                <ul>
+                    <li>@LocalizerRP["ProgLangs1"]</li>
+                    <li>@LocalizerRP["ProgLangs2"]</li>
+                    <li>@LocalizerRP["ProgLangs3"]</li>
+                </ul>
+                <p><b>@LocalizerRP["HProgrammingParadigms"]</b></p>
+                <ul>
+                    <li>@LocalizerRP["ProgrammingParadigms"]</li>
+                </ul>
+                <p><b>@LocalizerRP["HPlatforms"]</b></p>
+                <ul>
+                    <li>@LocalizerRP["Platforms1"]</li>
+                    <li>@LocalizerRP["Platforms2"]</li>
+                </ul>
+                <p><b>@LocalizerRP["HFrameworks"]</b></p>
+                <ul>
+                    <li>@LocalizerRP["Frameworks1"]</li>
+                    <li>@LocalizerRP["Frameworks2"]</li>
+                    <li>@LocalizerRP["Frameworks3"]</li>
+                    <li>@LocalizerRP["Frameworks4"]</li>
+                </ul>
+                <p><b>@LocalizerRP["HDBMS"]</b></p>
+                <ul>
+                    <li>@LocalizerRP["DBMS1"]</li>
+                    <li>@LocalizerRP["DBMS2"]</li>
+                </ul>
+                <p><b>@LocalizerRP["HMetodics"]</b></p>
+                <ul>
+                    <li>@LocalizerRP["Metodics1"]</li>
+                    <li>@LocalizerRP["Metodics2"]</li>
+                </ul>
+                <p><b>@LocalizerRP["HVCS"]</b></p>
+                <ul>
+                    <li>@LocalizerRP["VCS"]</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @LocalizerRP["HCourses"]
+            </td>
+            <td>
+                @LocalizerRP["Courses"]
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @LocalizerRP["HExp"]
+            </td>
+            <td>
+                @LocalizerRP["Exp"]
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @LocalizerRP["HPlans"]
+            </td>
+            <td>
+                @LocalizerRP["Plans"]
             </td>
         </tr>
     </tbody>

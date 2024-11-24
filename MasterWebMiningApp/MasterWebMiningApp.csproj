@@ -14,20 +14,50 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Localization\Abstract\LAbstract.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LAbstract.resx</DependentUpon>
+    </Compile>
     <Compile Update="Localization\Header\LHeaderComponent.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>LHeaderComponent.resx</DependentUpon>
     </Compile>
+    <Compile Update="Localization\NavigationMenu\LNavigationMenu.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LNavigationMenu.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Localization\Resume\LResumePage.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LResumePage.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Localization\Abstract\LAbstract.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LAbstract.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Localization\Header\LHeaderComponent.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Localization\Header\LHeaderComponent.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>LHeaderComponent.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\NavigationMenu\LNavigationMenu.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LNavigationMenu.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Resume\LResumePage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Resume\LResumePage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LResumePage.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 

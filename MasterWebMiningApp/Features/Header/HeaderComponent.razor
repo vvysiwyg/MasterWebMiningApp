@@ -1,18 +1,16 @@
 ﻿@inject IStringLocalizer<LHeaderComponent> Localizer
 
-<div>
-	<div>
-		<a href="imgs/ivanov_big.jpg">
-			<img src="photo.jpg" width="180" height="240" title="Магистр КубГУ Козиев Артем Борисович" alt="Магистр КубГУ Козиев Артем Борисович" />
-		</a>
+<div class="row">
+	<div class="col-2">
+		<img src="imgs/ivanov_big.jpg" width="180" height="240" title="Магистр КубГУ Козиев Артем Борисович" alt="Магистр КубГУ Козиев Артем Борисович" />
 	</div>
-	<div>
-		<h3>@Localizer["Fio"]</h3>
-		<h4>Факультет компьютерных технологий и прикладной математики</h4>
-		<h4>Кафедра информационных технологий</h4>
-		<h4>Специальность: &laquo;Технологии программирования и разработки информационно-коммуникационных систем&raquo;</h4>
-		<h4>Разработка программного средства в сфере исполнения заказов для назначения заказов курьерам</h4>
-		<h4>Научный руководитель: канд. физ.–мат. наук, доц. Лукащик Елена Павловна</h4>
+	<div class="col-10 d-flex flex-column justify-content-between">
+		<h4>@Localizer["Fio"]</h4>
+		<h5>@Localizer["Faculty"]</h5>
+		<h5>@Localizer["Dept"]</h5>
+		<h5>@Localizer["Specialty"]</h5>
+		<h5>@Localizer["Theme"]</h5>
+		<h5>@Localizer["Supervisor"]</h5>
 	</div>
 </div>
 

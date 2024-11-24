@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AverageGrade" xml:space="preserve">
+    <value>4.3</value>
+  </data>
+  <data name="Courses" xml:space="preserve">
+    <value>Курсы по Vue.js + Oracle</value>
+  </data>
+  <data name="DBMS1" xml:space="preserve">
+    <value>PostgreSQL 13</value>
+  </data>
+  <data name="DBMS2" xml:space="preserve">
+    <value>MSSQL</value>
+  </data>
+  <data name="Dob" xml:space="preserve">
+    <value>04.08.2001</value>
+  </data>
+  <data name="Exp" xml:space="preserve">
+    <value>Ава групп, системный администратор, 3 недели</value>
+  </data>
+  <data name="Frameworks1" xml:space="preserve">
+    <value>ASP.NET Core</value>
+  </data>
+  <data name="Frameworks2" xml:space="preserve">
+    <value>ASP.NET WebApi</value>
+  </data>
+  <data name="Frameworks3" xml:space="preserve">
+    <value>Blazor WebAssembly</value>
+  </data>
+  <data name="Frameworks4" xml:space="preserve">
+    <value>Entity Framework Core 6</value>
+  </data>
+  <data name="HAverageGrade" xml:space="preserve">
+    <value>Средний балл</value>
+  </data>
+  <data name="HCourses" xml:space="preserve">
+    <value>Дополнительные курсы</value>
+  </data>
+  <data name="HDBMS" xml:space="preserve">
+    <value>СУБД</value>
+  </data>
+  <data name="HDob" xml:space="preserve">
+    <value>Дата рождения</value>
+  </data>
+  <data name="Hei" xml:space="preserve">
+    <value>2019-2023 гг.: бакалавриат КубГУ</value>
+  </data>
+  <data name="HExp" xml:space="preserve">
+    <value>Опыт работы</value>
+  </data>
+  <data name="HFio" xml:space="preserve">
+    <value>ФИО</value>
+  </data>
+  <data name="HFrameworks" xml:space="preserve">
+    <value>Фреймворки</value>
+  </data>
+  <data name="HHardSkills" xml:space="preserve">
+    <value>Профессиональная специализация и владение компьютером</value>
+  </data>
+  <data name="HHei" xml:space="preserve">
+    <value>ВУЗ</value>
+  </data>
+  <data name="HHobbies" xml:space="preserve">
+    <value>Увлечения</value>
+  </data>
+  <data name="HLang" xml:space="preserve">
+    <value>Владение языками</value>
+  </data>
+  <data name="HMetodics" xml:space="preserve">
+    <value>Методики</value>
+  </data>
+  <data name="Hobbies1" xml:space="preserve">
+    <value>Компьютерные игры</value>
+  </data>
+  <data name="Hobbies2" xml:space="preserve">
+    <value>Книги (русская классика, научная фантастика, классическая литература)</value>
+  </data>
+  <data name="Hobbies3" xml:space="preserve">
+    <value>Музыка (EDM, Lo-fi)</value>
+  </data>
+  <data name="Hobbies4" xml:space="preserve">
+    <value>Кинематограф (Детектив)</value>
+  </data>
+  <data name="HPlans" xml:space="preserve">
+    <value>Планы на будущее</value>
+  </data>
+  <data name="HPlatforms" xml:space="preserve">
+    <value>Платформы</value>
+  </data>
+  <data name="HPob" xml:space="preserve">
+    <value>Место рождения</value>
+  </data>
+  <data name="HProgLangs" xml:space="preserve">
+    <value>Языки программирования</value>
+  </data>
+  <data name="HProgrammingParadigms" xml:space="preserve">
+    <value>Парадигмы программирования</value>
+  </data>
+  <data name="HSchool" xml:space="preserve">
+    <value>Школа</value>
+  </data>
+  <data name="HSoftSkills" xml:space="preserve">
+    <value>Личные качества</value>
+  </data>
+  <data name="HVCS" xml:space="preserve">
+    <value>Системы контроля версий</value>
+  </data>
+  <data name="Lang1" xml:space="preserve">
+    <value>Русский – родной</value>
+  </data>
+  <data name="Lang2" xml:space="preserve">
+    <value>Английский – средний уровень</value>
+  </data>
+  <data name="Metodics1" xml:space="preserve">
+    <value>SOLID</value>
+  </data>
+  <data name="Metodics2" xml:space="preserve">
+    <value>REST</value>
+  </data>
+  <data name="Plans" xml:space="preserve">
+    <value>Дальнейшее профессиональное и карьерное развитие в качестве разработчика ПО, в том числе изучение новых методик и паттернов программирования, фреймворков, технологий и языков программирования, исследовать настолько много мест в России, насколько это возможно</value>
+  </data>
+  <data name="Platforms1" xml:space="preserve">
+    <value>.Net Framework 4.7.2</value>
+  </data>
+  <data name="Platforms2" xml:space="preserve">
+    <value>.NET 5</value>
+  </data>
+  <data name="Pob" xml:space="preserve">
+    <value>г. Краснодар</value>
+  </data>
+  <data name="ProgLangs1" xml:space="preserve">
+    <value>C#</value>
+  </data>
+  <data name="ProgLangs2" xml:space="preserve">
+    <value>Typescript</value>
+  </data>
+  <data name="ProgLangs3" xml:space="preserve">
+    <value>SQL</value>
+  </data>
+  <data name="ProgrammingParadigms" xml:space="preserve">
+    <value>ООП</value>
+  </data>
+  <data name="School" xml:space="preserve">
+    <value>2008-2019 гг.: МБОУ гимназия №54, 1-11 класс</value>
+  </data>
+  <data name="SoftSkills1" xml:space="preserve">
+    <value>Делегирование задач</value>
+  </data>
+  <data name="SoftSkills2" xml:space="preserve">
+    <value>Умение слушать собеседника</value>
+  </data>
+  <data name="SoftSkills3" xml:space="preserve">
+    <value>Работа в команде</value>
+  </data>
+  <data name="SoftSkills4" xml:space="preserve">
+    <value>Критичность</value>
+  </data>
+  <data name="VCS" xml:space="preserve">
+    <value>Git</value>
+  </data>
+</root>

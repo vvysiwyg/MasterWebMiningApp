@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Contents" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="ExpectedResults" xml:space="preserve">
+    <value>Expected results</value>
+  </data>
+  <data name="ExpectedResultsBody1" xml:space="preserve">
+    <value>The planned outcomes of the work are:</value>
+  </data>
+  <data name="ExpectedResultsBody2" xml:space="preserve">
+    <value>System Architecture</value>
+  </data>
+  <data name="ExpectedResultsBody3" xml:space="preserve">
+    <value>Software for automation of business processes in the field of order fulfillment</value>
+  </data>
+  <data name="Goals" xml:space="preserve">
+    <value>Objectives</value>
+  </data>
+  <data name="GoalsBody1" xml:space="preserve">
+    <value>The purpose of the work is to develop software to automate business processes in the field of order fulfillment. In order to achieve the goal, it is necessary to solve a number of tasks, which include:</value>
+  </data>
+  <data name="GoalsBody2" xml:space="preserve">
+    <value>design the system architecture</value>
+  </data>
+  <data name="GoalsBody3" xml:space="preserve">
+    <value>design the database schema</value>
+  </data>
+  <data name="GoalsBody4" xml:space="preserve">
+    <value>develop the functional blocks of the system</value>
+  </data>
+  <data name="GoalsBody5" xml:space="preserve">
+    <value>develop a matrix of access to functional blocks of the system</value>
+  </data>
+  <data name="Header" xml:space="preserve">
+    <value>Summary: Developing a software tool in the order fulfillment industry to assign orders to couriers</value>
+  </data>
+  <data name="ImgTitle1" xml:space="preserve">
+    <value>Figure 1 - Authorization Code Flow chart with PKCE</value>
+  </data>
+  <data name="ImgTitle2" xml:space="preserve">
+    <value>Figure 2 - Application Architecture</value>
+  </data>
+  <data name="ImgTitle3" xml:space="preserve">
+    <value>Figure 3 - Example of the application interface</value>
+  </data>
+  <data name="Intro" xml:space="preserve">
+    <value>Introduction</value>
+  </data>
+  <data name="IntroBody" xml:space="preserve">
+    <value>On many Internet-platforms of the sphere of various services the method of delivery “courier delivery” is used. By now, the basic operations for the realization of this delivery are practically worked out and almost everywhere there is a request for automation of this activity. The end user forms an order in an external system, after which the information about the order enters the database. The system operator is responsible for assigning the order to the courier. He checks the order data and selects the courier to whom the order delivery will be assigned. After the assignment, the courier has a new item in the list of assigned orders, after which he accepts it, receives the order in the warehouse and delivers it to the end user. The developed Software Tool (ST) presents an order assignment system for both operators and couriers.</value>
+  </data>
+  <data name="Literature" xml:space="preserve">
+    <value>Bibliography</value>
+  </data>
+  <data name="LiteratureBody1" xml:space="preserve">
+    <value>RFC 7636 – Proof Key For Code Exchange by OAuth Public Clients – [Electronic resource] – (Eng) – URL:</value>
+  </data>
+  <data name="LiteratureBody2" xml:space="preserve">
+    <value>Authorization Code Flow with Proof Key for Code Exchange (PKCE) – [Electronic resource] – (Eng) – URL:</value>
+  </data>
+  <data name="MainPart" xml:space="preserve">
+    <value>Main part</value>
+  </data>
+  <data name="MainPartBody1" xml:space="preserve">
+    <value>The order has 5 states: “not assigned”; ‘assigned’; ‘in progress’; ‘emergency occurred’; ‘completed’. By structure, the PS contains a number of functional blocks. The functional block “authorization/authentication” is intended for authorization and authentication of a user in the system by means of iDP (identity provider) Auth0. The Authorization Code Flow with Proof Key for Code Exchange (PKCE) scheme is used for authentication and authorization (Fig.1).</value>
+  </data>
+  <data name="MainPartBody10" xml:space="preserve">
+    <value>The active order' function block allows the courier to view details of the order being delivered and the time elapsed, the operator has the same facility but can view any order.</value>
+  </data>
+  <data name="MainPartBody11" xml:space="preserve">
+    <value>The “list of archived orders” function block allows the operator to view the archive of orders in the status of “executed” or “emergency occurred” to determine basic information about the order.</value>
+  </data>
+  <data name="MainPartBody12" xml:space="preserve">
+    <value>The “order information detail” function block allows users to view detailed information about the order. Additionally, operators can assign an order to a courier when the status “not assigned” is set, and couriers can take the order to work.</value>
+  </data>
+  <data name="MainPartBody13" xml:space="preserve">
+    <value>The “courier information detail” function block allows the operator to view detailed information about the courier, the history of his orders, as well as display profit statistics for a certain period.</value>
+  </data>
+  <data name="MainPartBody14" xml:space="preserve">
+    <value>The application architecture shown in Fig. 2 consists of 4 elements: client application, idP, Web api and database server.</value>
+  </data>
+  <data name="MainPartBody15" xml:space="preserve">
+    <value>The PS is implemented as a one-page web application. PS logic is written in C# using Blazor framework, markup - HTML, CSS, Razor Pages, web api - C# using ASP.NET Core framework, DBMS - PostgreSQL 13. Fig.3 shows an example of the interface of the PS.</value>
+  </data>
+  <data name="MainPartBody2" xml:space="preserve">
+    <value>- A. The client application creates and stores a cryptographic key (code_verifier) and creates a new cryptographic key (t(code_verifier)) also called code_challenge based on it. The application sends a request to the authorization endpoint on the Auth0 server containing code_challenge and the transformation method t_m;</value>
+  </data>
+  <data name="MainPartBody3" xml:space="preserve">
+    <value>- B. The server stores the pair code_challenge and t_m and in response to the client adds the authorization code, which will be used in the future when accessing the application resources;</value>
+  </data>
+  <data name="MainPartBody4" xml:space="preserve">
+    <value>- C. The client application sends a request for an access token to the corresponding endpoint on the Auth0 server, containing the authorization code and code_verifier;</value>
+  </data>
+  <data name="MainPartBody5" xml:space="preserve">
+    <value>- D. The server applies the stored method t_m on the code_verifier from the request and compares it with code_challenge. If the values match, the server returns the access token and variant data such as user role. Even if an attacker obtains the authorization code in step B, he cannot get the access token without code_verifier.</value>
+  </data>
+  <data name="MainPartBody6" xml:space="preserve">
+    <value>Functional block “role model” is designed to provide authorized access to the system resources based on the role model. Table 1 shows the matrix of access to subsystems depending on the role.</value>
+  </data>
+  <data name="MainPartBody7" xml:space="preserve">
+    <value>The “list of unassigned orders” function block provides the operator with the ability to view unassigned orders and assign the order to a courier.</value>
+  </data>
+  <data name="MainPartBody8" xml:space="preserve">
+    <value>The “list of assigned orders” function block allows the courier to view the orders assigned to him and select one of them.</value>
+  </data>
+  <data name="MainPartBody9" xml:space="preserve">
+    <value>The “couriers list” function block provides the operator with the possibility to view the list of couriers in the organization, as well as to use the “Courier details” function block.</value>
+  </data>
+  <data name="Outro" xml:space="preserve">
+    <value>Conclusion</value>
+  </data>
+  <data name="OutroBody" xml:space="preserve">
+    <value>The developed software tool for assigning orders to couriers provides secure authentication and storage of personal data of users, accuracy and efficiency of all elements of courier service in the field of order fulfillment.</value>
+  </data>
+  <data name="TableCol1" xml:space="preserve">
+    <value>Operator</value>
+  </data>
+  <data name="TableCol2" xml:space="preserve">
+    <value>Courier</value>
+  </data>
+  <data name="TableName" xml:space="preserve">
+    <value>Table 1 - Matrix access by role</value>
+  </data>
+  <data name="TableRow1" xml:space="preserve">
+    <value>List of unassigned orders</value>
+  </data>
+  <data name="TableRow2" xml:space="preserve">
+    <value>List of assigned orders</value>
+  </data>
+  <data name="TableRow3" xml:space="preserve">
+    <value>List of couriers</value>
+  </data>
+  <data name="TableRow4" xml:space="preserve">
+    <value>Active order</value>
+  </data>
+  <data name="TableRow5" xml:space="preserve">
+    <value>List of archived orders</value>
+  </data>
+  <data name="TableRow6" xml:space="preserve">
+    <value>Detailed order information</value>
+  </data>
+  <data name="TableRow7" xml:space="preserve">
+    <value>Detailed information about the courier</value>
+  </data>
+</root>

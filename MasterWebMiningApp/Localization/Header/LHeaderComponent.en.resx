@@ -117,7 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Dept" xml:space="preserve">
+    <value>Department of Information Technology</value>
+  </data>
+  <data name="Faculty" xml:space="preserve">
+    <value>Faculty of Computer Technologies and Applied Mathematics</value>
+  </data>
   <data name="Fio" xml:space="preserve">
     <value>Koziev Artyom Borisovich</value>
+  </data>
+  <data name="Specialty" xml:space="preserve">
+    <value>Specialty: «Technologies of programming and development of information and communication systems»</value>
+  </data>
+  <data name="Supervisor" xml:space="preserve">
+    <value>Supervisor: Candidate of Physical and Mathematical Sciences, Associate Professor Elena Pavlovna Lukashchik</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Development of software for automation of business processes in the field of order fulfillment</value>
   </data>
 </root>

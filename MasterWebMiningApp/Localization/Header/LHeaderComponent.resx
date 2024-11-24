@@ -117,7 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Dept" xml:space="preserve">
+    <value>Кафедра информационных технологий</value>
+  </data>
+  <data name="Faculty" xml:space="preserve">
+    <value>Факультет компьютерных технологий и прикладной математики</value>
+  </data>
   <data name="Fio" xml:space="preserve">
     <value>Козиев Артем Борисович</value>
+  </data>
+  <data name="Specialty" xml:space="preserve">
+    <value>Специальность: «Технологии программирования и разработки информационно-коммуникационных систем»</value>
+  </data>
+  <data name="Supervisor" xml:space="preserve">
+    <value>Научный руководитель: канд. физ.–мат. наук, доц. Лукащик Елена Павловна</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Разработка программного средства в сфере исполнения заказов для назначения заказов курьерам</value>
   </data>
 </root>

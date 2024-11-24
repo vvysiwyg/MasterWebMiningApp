@@ -1,6 +1,12 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@inject NavigationManager Navigation
+@inject IJSRuntime JS
+@inject IStringLocalizer<LNavigationMenu> Localizer
+@using System.Globalization
+
+<div class="top-row navbar navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">MasterWebMiningApp</a>
+        <button class="btn text-light" @onclick='() => SetLanguage("en-US")'>English</button>
+        <button class="btn text-light" @onclick='() => SetLanguage("ru-RU")'>Русский</button>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -11,19 +17,45 @@
     <nav class="flex-column">
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+                @Localizer["Resume"]
             </NavLink>
         </div>
+        @if (CurrentCulture == "ru-RU")
+        {
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="biography">
+                    Биография
+                </NavLink>
+            </div>
+        }
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
+            <NavLink class="nav-link" href="abstract">
+                @Localizer["Abstract"]
             </NavLink>
         </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
-            </NavLink>
-        </div>
+        @if (CurrentCulture == "ru-RU")
+        {
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="library">
+                    Библиотека
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="links">
+                    Ссылки
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="report">
+                    Отчет о поиске
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="individual">
+                    Индивидуальный раздел
+                </NavLink>
+            </div>
+        }
     </nav>
 </div>
 
@@ -32,8 +64,24 @@
 
     private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
 
+    private string CurrentCulture { get; set; }
+
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        string? result = await JS.InvokeAsync<string>("blazorCulture.get");
+        CurrentCulture = result ?? "ru-RU";
+    }
+
+    private async Task SetLanguage(string culture)
+    {
+        await JS.InvokeVoidAsync("blazorCulture.set", culture);
+        CurrentCulture = culture;
+        Navigation.NavigateTo("/", forceLoad: true);
     }
 }

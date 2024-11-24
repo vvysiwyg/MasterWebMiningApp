@@ -61,11 +61,56 @@ namespace MasterWebMiningApp.Localization.Header {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Кафедра информационных технологий.
+        /// </summary>
+        public static string Dept {
+            get {
+                return ResourceManager.GetString("Dept", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Факультет компьютерных технологий и прикладной математики.
+        /// </summary>
+        public static string Faculty {
+            get {
+                return ResourceManager.GetString("Faculty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Козиев Артем Борисович.
         /// </summary>
         public static string Fio {
             get {
                 return ResourceManager.GetString("Fio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Специальность: «Технологии программирования и разработки информационно-коммуникационных систем».
+        /// </summary>
+        public static string Specialty {
+            get {
+                return ResourceManager.GetString("Specialty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Научный руководитель: канд. физ.–мат. наук, доц. Лукащик Елена Павловна.
+        /// </summary>
+        public static string Supervisor {
+            get {
+                return ResourceManager.GetString("Supervisor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Разработка программного средства в сфере исполнения заказов для назначения заказов курьерам.
+        /// </summary>
+        public static string Theme {
+            get {
+                return ResourceManager.GetString("Theme", resourceCulture);
             }
         }
     }

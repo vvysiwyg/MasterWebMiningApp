@@ -1,0 +1,139 @@
+﻿@page "/abstract"
+@inject IStringLocalizer<LAbstract> Localizer
+
+<div class="mb-4">
+    <HeaderComponent />
+</div>
+
+<div>
+    <div class="text-center">
+        <h4><b>@Localizer["Header"]</b></h4>
+    </div>
+    <div>
+        <div class="mb-4">
+            <p><b>@Localizer["Contents"]</b></p>
+            <a href="abstract/#intro">@Localizer["Intro"]</a><br />
+            <a href="abstract/#goals">@Localizer["Goals"]</a><br />
+            <a href="abstract/#expectedResults">@Localizer["ExpectedResults"]</a><br />
+            <a href="abstract/#mainPart">@Localizer["MainPart"]</a><br />
+            <a href="abstract/#outro">@Localizer["Outro"]</a>
+        </div>
+        <div>
+            <a id="intro"></a>
+            <h5><b>@Localizer["Intro"]</b></h5>
+            <p>@Localizer["IntroBody"]</p>
+            <a id="goals"></a>
+            <h5><b>@Localizer["Goals"]</b></h5>
+            <p>@Localizer["GoalsBody1"]</p>
+            <ul>
+                <li>@Localizer["GoalsBody2"]</li>
+                <li>@Localizer["GoalsBody3"]</li>
+                <li>@Localizer["GoalsBody4"] [<a href="abstract/#literatureBody1">1</a>]</li>
+                <li>@Localizer["GoalsBody5"] [<a href="abstract/#literatureBody2">2</a>]</li>
+            </ul>
+            <a id="expectedResults"></a>
+            <h5><b>@Localizer["ExpectedResults"]</b></h5>
+            <p>@Localizer["ExpectedResultsBody1"]</p>
+            <ul>
+                <li>@Localizer["ExpectedResultsBody2"]</li>
+                <li>@Localizer["ExpectedResultsBody3"]</li>
+            </ul>
+            <a id="mainPart"></a>
+            <h5><b>@Localizer["MainPart"]</b></h5>
+            <p>@Localizer["MainPartBody1"]</p>
+            <div class="text-center">
+                <img src="imgs/pic1.png" height="240" title=@Localizer["ImgTitle1"] alt=@Localizer["ImgTitle1"] />
+                <p>@Localizer["ImgTitle1"]</p>
+            </div>
+            <p>@Localizer["MainPartBody2"]</p>
+            <p>@Localizer["MainPartBody3"]</p>
+            <p>@Localizer["MainPartBody4"]</p>
+            <p>@Localizer["MainPartBody5"]</p>
+            <p>@Localizer["MainPartBody6"]</p>
+            <p>@Localizer["TableName"]</p>
+            <table class="table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>@Localizer["TableCol1"]</th>
+                        <th>@Localizer["TableCol2"]</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@Localizer["TableRow1"]</td>
+                        <td>+</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>@Localizer["TableRow2"]</td>
+                        <td>-</td>
+                        <td>+</td>
+                    </tr>
+                    <tr>
+                        <td>@Localizer["TableRow3"]</td>
+                        <td>+</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>@Localizer["TableRow4"]</td>
+                        <td>+</td>
+                        <td>+</td>
+                    </tr>
+                    <tr>
+                        <td>@Localizer["TableRow5"]</td>
+                        <td>+</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>@Localizer["TableRow6"]</td>
+                        <td>+</td>
+                        <td>+</td>
+                    </tr>
+                    <tr>
+                        <td>@Localizer["TableRow7"]</td>
+                        <td>+</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>@Localizer["MainPartBody7"]</p>
+            <p>@Localizer["MainPartBody8"]</p>
+            <p>@Localizer["MainPartBody9"]</p>
+            <p>@Localizer["MainPartBody10"]</p>
+            <p>@Localizer["MainPartBody11"]</p>
+            <p>@Localizer["MainPartBody12"]</p>
+            <p>@Localizer["MainPartBody13"]</p>
+            <p>@Localizer["MainPartBody14"]</p>
+            <div class="text-center">
+                <img src="imgs/pic2.png" height="240" title=@Localizer["ImgTitle2"] alt=@Localizer["ImgTitle2"] />
+                <p>@Localizer["ImgTitle2"]</p>
+            </div>
+            <p>@Localizer["MainPartBody15"]</p>
+            <div class="text-center">
+                <img src="imgs/pic3.png" height="360" title=@Localizer["ImgTitle3"] alt=@Localizer["ImgTitle3"] />
+                <p>@Localizer["ImgTitle3"]</p>
+            </div>
+            <a id="outro"></a>
+            <h5><b>@Localizer["Outro"]</b></h5>
+            <p>@Localizer["OutroBody"]</p>
+            <h5><b>@Localizer["Literature"]</b></h5>
+            <ol>
+                <li>
+                    @Localizer["LiteratureBody1"]
+                    <a href="https://datatracker.ietf.org/doc/html/rfc7636">https://datatracker.ietf.org/doc/html/rfc7636</a>
+                    <a id="literatureBody1"></a>
+                </li>
+                <li>
+                    @Localizer["LiteratureBody2"]
+                    <a href="https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow-with-pkce">https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow-with-pkce</a>
+                    <a id="literatureBody2"></a>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+@code {
+
+}

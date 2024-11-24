@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Contents" xml:space="preserve">
+    <value>Содержание</value>
+  </data>
+  <data name="ExpectedResults" xml:space="preserve">
+    <value>Планируемые практические результаты</value>
+  </data>
+  <data name="ExpectedResultsBody1" xml:space="preserve">
+    <value>Планируемыми результатами работы являются:</value>
+  </data>
+  <data name="ExpectedResultsBody2" xml:space="preserve">
+    <value>Архитектура системы</value>
+  </data>
+  <data name="ExpectedResultsBody3" xml:space="preserve">
+    <value>ПО для автоматизации бизнес-процессов в сфере исполнения заказов</value>
+  </data>
+  <data name="Goals" xml:space="preserve">
+    <value>Цели и задачи</value>
+  </data>
+  <data name="GoalsBody1" xml:space="preserve">
+    <value>Целью работы является разработка ПО для автоматизации бизнес-процессов в сфере исполнения заказов. Для достижения поставленной цели необходимо решить ряд задач, в число которых входят:</value>
+  </data>
+  <data name="GoalsBody2" xml:space="preserve">
+    <value>разработать архитектуру системы</value>
+  </data>
+  <data name="GoalsBody3" xml:space="preserve">
+    <value>разработать схему БД</value>
+  </data>
+  <data name="GoalsBody4" xml:space="preserve">
+    <value>разработать функциональные блокои системы</value>
+  </data>
+  <data name="GoalsBody5" xml:space="preserve">
+    <value>разработать матрицу доступа к функциональным блокам системы</value>
+  </data>
+  <data name="Header" xml:space="preserve">
+    <value>Реферат на тему: Разработка программного средства в сфере исполнения заказов для назначения заказов курьерам</value>
+  </data>
+  <data name="ImgTitle1" xml:space="preserve">
+    <value>Рисунок 1 – схема Authorization Code Flow with PKCE</value>
+  </data>
+  <data name="ImgTitle2" xml:space="preserve">
+    <value>Рисунок 2 – Архитектура приложения</value>
+  </data>
+  <data name="ImgTitle3" xml:space="preserve">
+    <value>Рисунок 3 – Пример интерфейса приложения</value>
+  </data>
+  <data name="Intro" xml:space="preserve">
+    <value>Введение</value>
+  </data>
+  <data name="IntroBody" xml:space="preserve">
+    <value>На многих Интернет-площадках сферы различных услуг используется способ доставки «доставка курьером». К настоящему времени основные операции по реализации этой доставки практически отработаны и почти повсеместно встает запрос на автоматизацию этой деятельности. Конечный пользователь формирует заказ во внешней системе, после чего информация о заказе попадает в базу данных. За назначение заказа курьеру ответственным является оператор системы. Он проверяет данные по заказу и выбирает курьера, которому будет назначена доставка заказа. После назначения у курьера появляется новый элемент в списке назначенных заказов, после чего он принимает его, получает заказ на складе и доставляет его конечному пользователю. Разработанное программное средство (ПС) представляет систему назначения заказов как для операторов, так и для курьеров.</value>
+  </data>
+  <data name="Literature" xml:space="preserve">
+    <value>Библиографический список</value>
+  </data>
+  <data name="LiteratureBody1" xml:space="preserve">
+    <value>RFC 7636 – Proof Key For Code Exchange by OAuth Public Clients – [Электронный ресурс] – (Eng) – URL:</value>
+  </data>
+  <data name="LiteratureBody2" xml:space="preserve">
+    <value>Authorization Code Flow with Proof Key for Code Exchange (PKCE) – [Электронный ресурс] – (Eng) – URL:</value>
+  </data>
+  <data name="MainPart" xml:space="preserve">
+    <value>Основная часть</value>
+  </data>
+  <data name="MainPartBody1" xml:space="preserve">
+    <value>У заказа предусмотрено 5 состояний: «не назначен»; «назначен»; «выполняется»; «произошло ЧП»; «завершен». По структуре ПС содержит ряд функциональных блоков. Функциональный блок «авторизация/аутентификация» предназначен для авторизации и аутентификации пользователя в системе при помощи iDP (identity provider) Auth0. Для аутентификации и авторизации используется схема Authorization Code Flow with Proof Key for Code Exchange (PKCE) (рис.1).</value>
+  </data>
+  <data name="MainPartBody10" xml:space="preserve">
+    <value>Функциональный блок «выполняемый заказ» позволяет курьеру просмотреть подробности доставляемого заказа и время, прошедшее с момента начала работы, у оператора есть такая же возможность, но он может просмотреть любой заказ.</value>
+  </data>
+  <data name="MainPartBody11" xml:space="preserve">
+    <value>Функциональный блок «список архивных заказов» позволяет оператору просмотреть архив заказов в статусе «выполнен» или «произошло ЧП» для определения основной информации о заказе.</value>
+  </data>
+  <data name="MainPartBody12" xml:space="preserve">
+    <value>Функциональный блок «детализация информации о заказе» позволяет пользователям просмотреть подробную информацию о заказе. Дополнительно, операторам доступна возможность назначить заказ курьеру в случае, когда установлен статус «не назначен», а курьерам доступна возможность взять заказ в работу.</value>
+  </data>
+  <data name="MainPartBody13" xml:space="preserve">
+    <value>Функциональный блок «детализация информации о курьере» позволяет оператору просмотреть подробную информацию о курьере, историю его заказов, а также отобразить статистику прибыли за определенный период.</value>
+  </data>
+  <data name="MainPartBody14" xml:space="preserve">
+    <value>Архитектура приложения, изображенная на рис. 2, состоит из 4 элементов: клиентское приложение, idP, Web api и сервер БД.</value>
+  </data>
+  <data name="MainPartBody15" xml:space="preserve">
+    <value>ПС реализовано как одностраничное веб-приложение. Логика ПС написана на C# с использованием фреймворка Blazor, разметка – HTML, CSS, Razor Pages, web api – C# с использованием фреймворка ASP.NET Core, СУБД – PostgreSQL 13. На рис.3 изображен пример интерфейса ПС.</value>
+  </data>
+  <data name="MainPartBody2" xml:space="preserve">
+    <value>- A. Клиентское приложение создает и сохраняет у себя криптографический ключ (code_verifier), а также создает на его основе новый криптографический ключ (t(code_verifier)) также называемый code_challenge. Приложение отправляет запрос к конечной точке авторизации на сервере Auth0, содержащий code_challenge и метод трансформации t_m;</value>
+  </data>
+  <data name="MainPartBody3" xml:space="preserve">
+    <value>- B. Сервер сохраняет себе пару code_challenge и t_m и в ответ клиенту добавляет код авторизации, который будет использоваться в дальнейшем при доступе к ресурсам приложения;</value>
+  </data>
+  <data name="MainPartBody4" xml:space="preserve">
+    <value>- C. Клиентское приложение отправляет запрос на получение токена доступа к соответствующей конечной точке на сервере Auth0, содержащее код авторизации и code_verifier;</value>
+  </data>
+  <data name="MainPartBody5" xml:space="preserve">
+    <value>- D. Сервер применяет сохраненный метод t_m на code_verifier из запроса и сравнивает его с code_challenge. Если значения совпадают, то сервер возвращает токен доступа и вариативные данные, например роль пользователя. Даже, если злоумышленник завладеет кодом авторизации на шаге B, он не сможет получить токен доступа без code_verifier.</value>
+  </data>
+  <data name="MainPartBody6" xml:space="preserve">
+    <value>Функциональный блок «ролевая модель» предназначен для обеспечения авторизованного доступа к ресурсам системы на основании ролевой модели. В табл.1 приведена матрица доступа к подсистемам в зависимости от роли.</value>
+  </data>
+  <data name="MainPartBody7" xml:space="preserve">
+    <value>Функциональный блок «список неназначенных заказов» предоставляет оператору возможность просмотра не назначенных заказов и назначения заказа курьеру.</value>
+  </data>
+  <data name="MainPartBody8" xml:space="preserve">
+    <value>Функциональный блок «список назначенных заказов» предоставляет курьеру возможность просмотра назначенных ему заказов и выбора одного из них.</value>
+  </data>
+  <data name="MainPartBody9" xml:space="preserve">
+    <value>Функциональный блок «список курьеров» предоставляет оператору возможность просмотреть список курьеров, числящихся в организации, а также воспользоваться функциональным блоком «детализация информации о курьере».</value>
+  </data>
+  <data name="Outro" xml:space="preserve">
+    <value>Заключение</value>
+  </data>
+  <data name="OutroBody" xml:space="preserve">
+    <value>Разработанное программное средство для назначения заказов курьерам обеспечивает безопасную аутентификацию и хранение личных данных пользователей, точность и оперативность работы всех элементов курьерской службы в сфере исполнения заказов.</value>
+  </data>
+  <data name="TableCol1" xml:space="preserve">
+    <value>Оператор</value>
+  </data>
+  <data name="TableCol2" xml:space="preserve">
+    <value>Курьер</value>
+  </data>
+  <data name="TableName" xml:space="preserve">
+    <value>Таблица 1 – Матрица доступа по ролям</value>
+  </data>
+  <data name="TableRow1" xml:space="preserve">
+    <value>Список не назначенных заказов</value>
+  </data>
+  <data name="TableRow2" xml:space="preserve">
+    <value>Список назначенных заказов</value>
+  </data>
+  <data name="TableRow3" xml:space="preserve">
+    <value>Список курьеров</value>
+  </data>
+  <data name="TableRow4" xml:space="preserve">
+    <value>Выполняемый заказ</value>
+  </data>
+  <data name="TableRow5" xml:space="preserve">
+    <value>Список архивных заказов</value>
+  </data>
+  <data name="TableRow6" xml:space="preserve">
+    <value>Детализация информации о заказе</value>
+  </data>
+  <data name="TableRow7" xml:space="preserve">
+    <value>Детализация информации о курьере</value>
+  </data>
+</root>
