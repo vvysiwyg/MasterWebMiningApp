@@ -491,5 +491,14 @@ namespace MasterWebMiningApp.Localization.Abstract {
                 return ResourceManager.GetString("TableRow7", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Автореферат Козиева АБ Разработка программного средства в сфере исполнения заказов для назначения заказов курьерам.
+        /// </summary>
+        public static string Title {
+            get {
+                return ResourceManager.GetString("Title", resourceCulture);
+            }
+        }
     }
 }

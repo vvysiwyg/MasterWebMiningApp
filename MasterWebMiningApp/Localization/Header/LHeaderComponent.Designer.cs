@@ -113,5 +113,14 @@ namespace MasterWebMiningApp.Localization.Header {
                 return ResourceManager.GetString("Theme", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Магистр КубГУ Козиев Артем Борисович.
+        /// </summary>
+        public static string Title {
+            get {
+                return ResourceManager.GetString("Title", resourceCulture);
+            }
+        }
     }
 }
