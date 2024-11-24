@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "MasterWebMiningApp",
   "resources": {
-    "hash": "sha256-HCiT0ulJo4r3acvKvnXSeJ2J75br2E3q3E30VuSHbVg=",
+    "hash": "sha256-OMyu4B9jvaV4yrXW8c1M8Ij8Yj/IeUi/4SrdkTBBVDE=",
     "jsModuleNative": {
       "dotnet.native.8.0.11.c20nu47ib6.js": "sha256-VdKq87/z5NIxZKmuM+fv38XF+RcEb/bg3jVBwQSfwP4="
     },
@@ -15,7 +15,7 @@
       "icudt.dat": "sha256-tO5O5YzMTVSaKBboxAqezOQL9ewmupzV2JrB5Rkc8a4="
     },
     "assembly": {
-      "MasterWebMiningApp.wasm": "sha256-ciy2Yr4XoiqDOWKAVN50641a7YkGF+ANKvuqWkg5vh0=",
+      "MasterWebMiningApp.wasm": "sha256-2heeawEwmw0JvvN+509VQ2nNSEe1Dv60JVfea9P8Jl4=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-JS8zH1/no9bvLSXUYUR6IZQ4NyqO4H02xyK8oL0QpYs=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-mmo6S4AxiBcnKbs4b+7ObftqPCkIcLGiAv9gICT/5NY=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-d6tN87QrJstiTMcLaUtZ6TWiNHa8A74Suuzx95thRrE=",
@@ -50,7 +50,7 @@
     },
     "satelliteResources": {
       "en": {
-        "MasterWebMiningApp.resources.wasm": "sha256-yEIcDdTPDlhURwwjT3EylgWJEK9HcqcvhXgNngkdFo0="
+        "MasterWebMiningApp.resources.wasm": "sha256-crF5ZMGws8jApuyhT9A1c4sYDUaHWkOnHk4QmpVWbBM="
       }
     }
   },
