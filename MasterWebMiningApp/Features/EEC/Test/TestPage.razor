@@ -1,0 +1,514 @@
+﻿@page "/eec/test"
+@inject NavigationManager NavigationManager
+
+<div class="@DisplayForTest position-absolute top-50 start-50 translate-middle">
+    @for(int i = 0; i < Questions.Count; i++)
+    {
+        <CheckBoxGroupComponent 
+            CustomCssClass="@Questions[i].GetCssClass()" 
+            Number="i+1" 
+            Question="Questions[i]" />
+    }
+    <div class="d-flex justify-content-between mt-3">
+        <button class="btn btn-primary"
+                disabled="@IsPrevDisabled"
+                @onclick="PrevQuestion">
+            Предыдущий
+        </button>
+        <button class="btn btn-primary"
+                disabled="@IsNextDisabled"
+                @onclick="NextQuestion">
+            Следующий
+        </button>
+        <button class="btn btn-success"
+                disabled="@(!IsNextDisabled)"
+                @onclick="EndTest">
+            Завершить тест
+        </button>
+    </div>
+</div>
+<div class="@DisplayForResults position-absolute top-50 start-50 translate-middle">
+    <p>@ResultText</p>
+    <button @onclick='() => NavigationManager.NavigateTo("/eec")'
+            class="btn btn-primary mt-3">
+        Вернуться на главное меню
+    </button>
+</div>
+
+@code {
+    public List<Question> Questions { get; set; }
+    public string ResultText { get; set; }
+    public string DisplayForTest { get; set; }
+    public string DisplayForResults { get; set; }
+    public int ActiveIndex { get; set; }
+    public bool IsNextDisabled { get; set; }
+    public bool IsPrevDisabled { get; set; }
+
+    public void EndTest()
+    {
+        ResultText = string.Empty;
+        int correctQuestionsCount = 0;
+
+        foreach(Question question in Questions)
+        {
+            int correctAnswersCount = 0, correctCheckedAnswersCount = 0;
+            foreach(Answer answer in question.Answers)
+            {
+                if ((answer.IsChecked && !answer.IsCorrect) || (!answer.IsChecked && answer.IsCorrect))
+                {
+                    correctCheckedAnswersCount = -1;
+                    break;
+                }
+
+                if (answer.IsCorrect)
+                {
+                    correctAnswersCount++;
+
+                    if (answer.IsChecked)
+                        correctCheckedAnswersCount++;
+                }
+            }
+
+            if (correctAnswersCount == correctCheckedAnswersCount)
+                correctQuestionsCount++;
+        }
+
+        ResultText = $"Вы набрали {correctQuestionsCount} из {Questions.Count} баллов, {(correctQuestionsCount >= 8 ? "поздравляем, вы успешно прошли тест" : "к сожалению, тест не пройден - полученный результат ниже минимально требуемого")}";
+        DisplayForTest = "d-none";
+        DisplayForResults = "d-block";
+        StateHasChanged();
+    }
+
+    public void NextQuestion()
+    {
+        Questions[ActiveIndex++].IsActive = false;
+        IsPrevDisabled = false;
+
+        if (ActiveIndex >= Questions.Count - 1)
+        {
+            IsNextDisabled = true;
+            ActiveIndex = Questions.Count - 1;
+        }
+        else
+            IsNextDisabled = false;
+
+        Questions[ActiveIndex].IsActive = true;
+        StateHasChanged();
+    }
+
+    public void PrevQuestion()
+    {
+        Questions[ActiveIndex--].IsActive = false;
+        IsNextDisabled = false;
+
+        if (ActiveIndex <= 0)
+        {
+            ActiveIndex = 0;
+            IsPrevDisabled = true;
+        }
+        else
+            IsPrevDisabled = false;
+
+        Questions[ActiveIndex].IsActive = true;
+        StateHasChanged();
+    }
+
+    protected override Task OnInitializedAsync()
+    {
+        IsPrevDisabled = true;
+        DisplayForTest = "d-block";
+        DisplayForResults = "d-none";
+        Questions = new List<Question>()
+        {
+            new Question()
+            {
+                QuestionText = "В Конструкторе расширенного поиска поиск создается в виде",
+                IsActive = true,
+                Answers = new List<Answer>()
+                {
+                    new Answer()
+                    {
+                        AnswerText = "Поискового запроса",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "XSLT-преобразования",
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Хранимой процедуры",
+                    }
+                }
+            },
+            new Question()
+            {
+                QuestionText = "Для каких конструкторов и справочников можно создать и применить собственные разметки",
+                Answers = new List<Answer>()
+                {
+                    new Answer()
+                    {
+                        AnswerText = "Конструктор справочников",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Справочник сотрудников",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Справочник категорий"
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Конструктор правил нумерации"
+                    }
+                }
+            },
+            new Question()
+            {
+                QuestionText = "Что из этого можно настроить в Конструкторе состояний",
+                Answers = new List<Answer>()
+                {
+                    new Answer()
+                    {
+                        AnswerText = "Переходы между состояниями",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Указать доступные операции редактирования для различных состояний",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Указать роли, доступные в различных состояниях"
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Указать операции редактирования, доступные в различных ролях"
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Состояния",
+                        IsCorrect = true
+                    }
+                }
+            },
+            new Question()
+            {
+                QuestionText = "Где можно создать Личную папку пользователя ?",
+                Answers = new List<Answer>()
+                {
+                    new Answer()
+                    {
+                        AnswerText = "В справочнике Системные настройки",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "В карточке организации в Справочнике сотрудников"
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "В карточке сотрудника в Справочнике сотрудников",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "В Навигаторе в дереве папок"
+                    }
+                }
+            },
+            new Question()
+            {
+                QuestionText = "Выберите, при каких условиях пользователь увидит карточку:",
+                Answers = new List<Answer>()
+                {
+                    new Answer()
+                    {
+                        AnswerText = "По ролевой модели чтение разрешено в любых состояниях. По дискреционной модели чтение разрешено. По мандатной модели уровень доступа пользователя ниже уровня допуска."
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "По ролевой модели чтение запрещено в любых состояниях. По дискреционной модели чтение разрешено. По мандатной модели уровень доступа пользователя выше уровня допуска."
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Пользователь не подходит под условия ни одной из ролей. По дискреционной модели чтение разрешено. По мандатной модели уровень доступа пользователя ниже уровня допуска.",
+                        IsCorrect = true
+                    }
+                }
+            },
+            new Question()
+            {
+                QuestionText = "Что из этого можно настроить в Конструкторе представлений:",
+                Answers = new List<Answer>()
+                {
+                    new Answer()
+                    {
+                        AnswerText = "Скрыть колонку с цветовыми метками",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Отобразить в представлении колонку, в которой отображается значок типа карточки"
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Запретить предварительный просмотр карточек в Навигаторе"
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Настроить права доступа к представлению",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Добавить в систему новый шаблон для экспорта представления в Excel",
+                        IsCorrect = true
+                    }
+                }
+            },
+            new Question()
+            {
+                QuestionText = "Что из этого можно настроить в Навигаторе пользователя",
+                Answers = new List<Answer>()
+                {
+                    new Answer()
+                    {
+                        AnswerText = "Настроить размер шрифта для дерева папок и для области представления",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Настроить Личный помощник"
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Настроить цветовые метки",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Настроить работу со штрих-кодами",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Настроить журнал навигатора",
+                        IsCorrect = true
+                    }
+                }
+            },
+            new Question()
+            {
+                QuestionText = "Системными папками являются:",
+                Answers = new List<Answer>()
+                {
+                    new Answer()
+                    {
+                        AnswerText = "Виртуальная папка"
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Личная папка пользователя"
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Папка-делегат"
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Папка Избранное",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Папка Карточки",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Папка Последние",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Папка Конструкторы и справочники",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Папка Результаты поиска",
+                        IsCorrect = true
+                    }
+                }
+            },
+            new Question()
+            {
+                QuestionText = "Что из этого можно настроить в Справочнике видов карточек для видов базовых карточек Документ и Задание:",
+                Answers = new List<Answer>()
+                {
+                    new Answer()
+                    {
+                        AnswerText = "Настроить варианты завершения заданий"
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Указать принцип наследования от родительского вида"
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Указать, при выполнении каких операций будет применяться электронная подпись",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Указать тип версионинга для вложенных файлов"
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Настроить ведение истории операций (на вкладке История)"
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Сделать недоступным создание карточек какого-либо вида",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Настроить горячие клавиши"
+                    }
+                }
+            },
+            new Question()
+            {
+                QuestionText = "Что из этого можно настроить для элементов управления в Конструкторе разметок",
+                Answers = new List<Answer>()
+                {
+                    new Answer()
+                    {
+                        AnswerText = "Установить признак Только для чтения для элемента управления",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Обязательность заполнения элемента управления",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Указать значение по умолчанию для элемента управления",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Назначить права на элемент управления"
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Видимость элемента управления",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Указать операцию редактирования для элемента управления",
+                        IsCorrect = true
+                    }
+                }
+            },
+            new Question()
+            {
+                QuestionText = "Что относится к общим атрибутам элементов управления ?",
+                Answers = new List<Answer>()
+                {
+                    new Answer()
+                    {
+                        AnswerText = "Видимость",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Текст метки"
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Операция редактирования",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Ссылка, поле ссылки",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Местоположение метки"
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Обязательность",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Значение по умолчанию",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Только для чтения",
+                        IsCorrect = true
+                    }
+                }
+            },
+            new Question()
+            {
+                QuestionText = "Максимальное количество фильтров, которое может быть определено для подсветки строчек в представлении",
+                Answers = new List<Answer>()
+                {
+                    new Answer()
+                    {
+                        AnswerText = "3"
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "1"
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Неограниченно",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "2"
+                    }
+                }
+            },
+            new Question()
+            {
+                QuestionText = "Вид расширенного отчета, предполагающий отображение результатов через специально разработанную карточку (не карточку расширенного отчета)",
+                Answers = new List<Answer>()
+                {
+                    new Answer()
+                    {
+                        AnswerText = "Прикладной отчет",
+                        IsCorrect = true
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Базовый отчет"
+                    },
+                    new Answer()
+                    {
+                        AnswerText = "Отчет MS Reporting"
+                    }
+                }
+            }
+        };
+        return base.OnInitializedAsync();
+    }
+}

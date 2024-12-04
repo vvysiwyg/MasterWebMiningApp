@@ -1,0 +1,24 @@
+﻿<li class="list-group-item">
+    <div class="row my-2">
+        <div class="col-2 col-sm-1 text-center">
+            <div class="h3 fw-light">
+                @Id
+            </div>
+        </div>
+        <div class="col">
+            <h3 class="h5">
+                <a class="text-decoration-none text-body me-2" href="@URL">@Header</a>
+            </h3>
+            <div class="mt-3 text-body-secondary">
+                @Body
+            </div>
+        </div>
+    </div>
+</li>
+
+@code {
+    [Parameter, EditorRequired] public int Id { get; set; }
+    [Parameter, EditorRequired] public string Header { get; set; }
+    [Parameter, EditorRequired] public string Body { get; set; }
+    [Parameter, EditorRequired] public string URL { get; set; }
+}

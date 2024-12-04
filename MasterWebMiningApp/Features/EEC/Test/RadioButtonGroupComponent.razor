@@ -1,0 +1,22 @@
+﻿<div class="@CustomCssClass">
+    <InputRadioGroup @bind-Value="Answer.AnswerText">
+        <p>@($"{Number}.") @Question.QuestionText</p>
+        @foreach (Answer answer in Question.Answers)
+        {
+            <InputRadio Value="answer.AnswerText"/>@answer.AnswerText<br />
+        }
+    </InputRadioGroup>
+</div>
+
+@code {
+    [Parameter, EditorRequired] public int Number { get; set; }
+    [Parameter, EditorRequired] public Question Question { get; set; }
+    [Parameter, EditorRequired] public string CustomCssClass { get; set; }
+    public Answer Answer { get; set; }
+
+    protected override Task OnInitializedAsync()
+    {
+        Answer = Question.Answers.FirstOrDefault();
+        return base.OnInitializedAsync();
+    }
+}
