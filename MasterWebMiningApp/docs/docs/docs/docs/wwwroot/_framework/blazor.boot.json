@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "MasterWebMiningApp",
   "resources": {
-    "hash": "sha256-dT/zTC4bmitsTDORn9KB7fTH1oA1j1BsaWTNJuxOxrM=",
+    "hash": "sha256-ulPHzEfpOaj2X47p7pGLcX4k59ueB1hsU1/ELoofIQ8=",
     "jsModuleNative": {
       "dotnet.native.8.0.11.c20nu47ib6.js": "sha256-VdKq87/z5NIxZKmuM+fv38XF+RcEb/bg3jVBwQSfwP4="
     },
@@ -59,7 +59,7 @@
     },
     "satelliteResources": {
       "en": {
-        "MasterWebMiningApp.resources.wasm": "sha256-Z8B3nzL9BkgGh0fJu53ld9miOAAZydExOxGbGQlB2x8="
+        "MasterWebMiningApp.resources.wasm": "sha256-gmV9MD3pFBvEtYYXeUcY8H6FOAY2e9WHTLwXKoKwMiA="
       }
     }
   },
